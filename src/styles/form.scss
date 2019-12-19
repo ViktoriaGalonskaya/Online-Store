@@ -1,0 +1,127 @@
+.main-form{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-form__info{
+
+  .content-item__title{
+    padding-bottom: 32px;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000F08;
+  }
+
+  .content-item__description{
+    padding-bottom: 80px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+.form{
+  width: 100%;
+  border-bottom: 2px solid #D8D8D8;
+
+  .form-label{
+    display: flex;
+    flex-direction: row;
+
+    input::-webkit-input-placeholder {
+      font-size: 32px;
+      line-height: 48px;
+      color: #8C8C8C;
+    }
+
+    input::-moz-placeholder {
+      font-size: 32px;
+      line-height: 48px;
+      color: #8C8C8C;
+    }/* Firefox 19+ */
+
+    input:-moz-placeholder {
+      font-size: 32px;
+      line-height: 48px;
+      color: #8C8C8C;
+    }/* Firefox 18- */
+
+    input:-ms-input-placeholder {
+      font-size: 32px;
+      line-height: 48px;
+      color: #8C8C8C;
+    }
+  }
+
+  .form-input{
+    width: 90.4%;
+    border: none;
+    font-size: 32px;
+    line-height: 48px;
+    color: black;
+  }
+
+  .form-button{
+    width: 9.6%;
+    border: none;
+    font-size: 32px;
+    background: none;
+    color: #000F08;
+  }
+}
+
+@media (max-width: 2070px) {
+
+  .main-form__info{
+
+    .content-item__title{
+      padding-bottom: 32px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .content-item__description{
+      padding-bottom: 80px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .form{
+    padding-bottom: 10px;
+
+    .form-label{
+
+      input::-webkit-input-placeholder {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      input::-moz-placeholder {
+        font-size: 24px;
+        line-height: 28px;
+      }/* Firefox 19+ */
+
+      input:-moz-placeholder {
+        font-size: 24px;
+        line-height: 28px;
+      }/* Firefox 18- */
+
+      input:-ms-input-placeholder {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+
+    .form-input{
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .form-button{
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

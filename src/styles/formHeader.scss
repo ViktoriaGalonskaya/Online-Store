@@ -1,0 +1,98 @@
+.header-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.style-button-header{
+  background: none;
+  border: none;
+  color: #000F08;
+  font-size: 24px;
+  line-height: 24px
+}
+
+.search{
+  width: 30%;
+  padding: 0 10px 10px 0;
+  white-space: nowrap;
+
+  input::-webkit-input-placeholder {
+    color:#000F08;
+  }
+
+  input::-moz-placeholder {
+    color:#000F08;
+  }/* Firefox 19+ */
+
+  input:-moz-placeholder {
+    color:#000F08;
+  }/* Firefox 18- */
+
+  input:-ms-input-placeholder {
+    color:#000F08;
+  }
+}
+
+.search-label{
+  display: flex;
+  flex-direction: row;
+}
+
+.search-img{
+  stroke: #000F08;
+}
+
+.search-input{
+  width: 125px;
+  padding-left: 10px;
+  background: none;
+  border: none;
+  color: #000F08;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.sign-in{
+  width: 25%;
+  text-align: center;
+  padding: 0 10px 10px 0;
+  white-space: nowrap;
+}
+
+.cart{
+  width: 25%;
+  text-align: center;
+  padding: 0 10px 10px 0;
+  white-space: nowrap;
+}
+
+.cart-button, .sign-in-button{
+  text-decoration: none;
+}
+
+.like{
+  width: 10%;
+  text-align: center;
+  padding: 0 10px 10px 0;
+  white-space: nowrap;
+}
+
+.like-img{
+  stroke: #000F08;
+}
+
+@media (max-width: 2070px){
+
+  .style-button-header{
+    font-size: 18px;
+    line-height: 14px;
+  }
+
+  .search-input{
+    margin-top: -10px;
+    width: 95px;
+    font-size: 18px;
+    line-height: 14px;
+  }
+}

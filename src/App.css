@@ -1,22 +1,96 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+*{
+/* font-family: 'Helvetica Neue LT Std';*/
+    font-family: 'Open Sans', sans-serif;
+    color: #000F08;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+img{
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App{
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #09d3ac;
+.w100{
+    width: 100%;
+    display: block;
+}
+
+.w50{
+    width: 50%;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    right: 120px;
+    bottom: 24px;
+    width: 24px;
+    height: 5px;
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #000F08;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.down {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 5px 25px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.down:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (max-width: 2070px){
+
+    .close {
+        position: absolute;
+        right: 100px;
+        bottom: 20px;
+        width: 20px;
+        height: 0;
+        opacity: 1;
+    }
+
+    .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 28px;
+        width: 2px;
+        background-color: #000F08;
+    }
+
+    .down {
+        padding: 7px;
+        margin: 0 0 3px 25px;
+    }
 }

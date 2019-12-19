@@ -1,0 +1,30 @@
+.content-item__title{
+   color: white;
+   font-size: 76px;
+   line-height: 76px;
+   padding-bottom: 40px;
+ }
+
+.content-item__description{
+  color: white;
+  font-size: 32px;
+  line-height: 48px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 2070px){
+
+  .content-item__title{
+    color: white;
+    font-size: 52px;
+    line-height: 52px;
+    padding-bottom: 20px;
+  }
+
+  .content-item__description{
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,194 @@
+.home{
+  position: relative;
+
+  .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .menu__link{
+      color: white;
+      white-space: nowrap;
+    }
+
+    .style-button-header{
+       color: white;
+     }
+
+    .search{
+      margin-top: -1px;
+
+      input::-webkit-input-placeholder {
+        color: white;
+      }
+
+      input::-moz-placeholder {
+        color: white;
+      }/* Firefox 19+ */
+
+      input:-moz-placeholder {
+        color: white;
+      }/* Firefox 18- */
+
+      input:-ms-input-placeholder {
+        color: white;
+      }
+    }
+
+    .search-input{
+      color: white;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .search-img{
+      stroke: white;
+    }
+
+    .like-img{
+      stroke: white;
+    }
+
+    .search-input{
+      color: white;
+    }
+  }
+
+}
+
+.home-collection{
+  position: relative;
+}
+
+.home-collection--row{
+  display: flex;
+  flex-direction: row;
+  max-width: 2880px;
+  margin: 0 auto;
+}
+
+.home-collection__bg{
+  padding-bottom: 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-collection--1{
+  background-image: url("../images/blue.jpg");
+}
+
+.home-collection--2{
+  background-image: url("../images/jeans.jpg");
+}
+
+.home-collection--3{
+  background-image: url("../images/lace.jpg");
+}
+
+.home-collection--4{
+  background-image: url("../images/shoes.jpg");
+}
+
+.home-collection__info{
+  position: absolute;
+  z-index: 1;
+}
+
+.home-collection__info--pos-left-bottom{
+  left: 10%;
+  top: 65%;
+}
+
+.home-collection__info--pos-left-top{
+  left: 10%;
+  top: 30%;
+}
+
+.home-collection__info--pos-right-bottom{
+  width: 35%;
+  margin-left: 65%;
+  top: 64%;
+  right: 8%;
+}
+
+.outer{
+  max-width: 2504px;
+  margin: 120px 188px;
+
+  img{
+    display: block;
+  }
+}
+
+.arrivals-links, .shop-links, .shop-photos{
+  padding-bottom: 60px;
+}
+
+.arrivals-links__link, .shop-links__link{
+  position: relative;
+  padding-right: 120px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.shop-links__link--arrow:after{
+  content: '';
+  position: absolute;
+  top: 30%;
+  right: 90px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 2070px){
+  .home {
+
+    .header {
+
+      .search {
+        margin-top: 0;
+
+        .search-img {
+          margin-top: -5px;
+        }
+
+        .search-input {
+          font-size: 18px;
+          line-height: 20px;
+          margin-top: -8px;
+        }
+      }
+    }
+
+    .outer {
+      margin: 80px 144px;
+    }
+
+    .arrivals-links, .shop-links, .shop-photos {
+      padding-bottom: 40px;
+    }
+
+    .arrivals-links__link, .shop-links__link {
+      padding-right: 120px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .home-collection__info--pos-left-bottom{
+      top: 50%;
+    }
+
+    .home-collection__info--pos-right-bottom{
+      width: 40%;
+      top: 50%;
+    }
+  }
+}
